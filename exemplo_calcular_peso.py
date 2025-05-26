@@ -25,9 +25,9 @@ def calcular_imc():
     
     if imc < 18.5:
         return f"IMC: {imc:.2f} - Abaixo do peso"
-    elif imc < 25:
+    elif imc > 18.5 and imc < 25:
         return f"IMC: {imc:.2f} - Peso normal"
-    elif imc < 30:
+    elif imc > 25 and imc < 30:
         return f"IMC: {imc:.2f} - Sobrepeso"
     else:
         return f"IMC: {imc:.2f} - Obesidade"

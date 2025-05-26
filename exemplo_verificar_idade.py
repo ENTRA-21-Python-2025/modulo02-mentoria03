@@ -19,7 +19,7 @@ Exemplo:
 
 def verificar_idade():
     idade = int(input("Digite sua idade: "))
-    if idade < 0:
+    if idade < 0 or idade > 101:
         return "Idade inválida!"
     elif idade < 18:
         return "Você é menor de idade"

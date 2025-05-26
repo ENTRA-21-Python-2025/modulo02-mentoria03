@@ -11,7 +11,7 @@ Este programa é um menu que integra três exemplos diferentes:
    - Calcula seu Índice de Massa Corporal
    - Mostra sua classificação (abaixo do peso, normal, etc.)
 
-3. Verificar Estação
+3. Verificar Estação do Ano
    - Identifica a estação do ano
    - Baseado no mês que você informar
 
@@ -32,7 +32,8 @@ Exemplo de uso:
 
 from exemplo_verificar_idade import verificar_idade
 from exemplo_calcular_peso import calcular_imc
-from exemplo_verificar_estacao import verificar_estacao
+import exemplo_verificar_estacao
+
 
 def exibir_menu():
     print("\n=== Menu Principal ===")
@@ -57,7 +58,7 @@ def main():
                 print(f"\nResultado: {resultado}")
             case '3':
                 print("\n=== Verificador de Estação do Ano ===")
-                resultado = verificar_estacao()
+                resultado = exemplo_verificar_estacao.verificar_estacao()
                 print(f"\nEstação: {resultado}")
             case '4':
                 print("\nPrograma finalizado!")
